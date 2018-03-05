@@ -1,0 +1,37 @@
+footer>p{
+    color: crimson;
+}
+footer:hover p.derechos{
+    font-size: 3rem;
+}
+main p{
+    color: blue;
+}
+[name="Lorem"]{/*Todos los elementos que tienen el atributo name*/
+    color: mediumvioletred;
+}
+[class="p1"].{
+    color: maroon;
+}
+article .p2+p:hover{
+    color: maroon
+}
+article .p2+p::first-letter{
+    font-size: 4rem;
+    font-family: fantasy;
+}
+article .p2+p::first-line{
+    font-weight: bold;
+}
+section::before {
+    content: "!!!!";
+    color: salmon;
+}
+section::after{
+    content: "!!!!";
+    color: salmon;
+}
+section p::before{
+    counter-increment: section;
+    content:counter(section)".";
+}

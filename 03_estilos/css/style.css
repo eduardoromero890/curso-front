@@ -1,0 +1,16 @@
+/* Especialidad
+a- in line
+b- id
+c- class
+d- etiquetas
+a.b.c.d*/
+/* Selector mediante id:No se suele usar*/
+#p1 {color: aliceblue}
+
+/* Selector mediante class: LO MAS IMPORTANTE
+Especialidad: 0.0.0.1*/
+.p1{color: chartreuse}
+
+/*Selector mediante etiquetas
+Especialidad:0.0.0.1*/
+p{color: brown}

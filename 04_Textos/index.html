@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Textos</title>
+    <style>
+    blockquote:before{
+        content:'\00AB' '\00BB';
+    }
+    
+    blockquote:after{
+        content:open-quote;
+    }
+    </style>
+</head>
+<body>
+    <nav>
+    <menu>
+        <menuitem>Item 1</menuitem>
+        <menuitem>Item 2</menuitem>
+        <menuitem>Item 3</menuitem>
+        <menuitem>Item 4</menuitem>      
+    </menu>
+   
+</nav>
+<details>
+    <summary>Economía</summary>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, corrupti enim praesentium ex commodi itaque, nesciunt error obcaecati dolor perspiciatis sed nulla delectus pariatur laudantium exercitationem aut iusto, quam facere?</p>
+<p>Deleniti blanditiis, quo deserunt ullam beatae suscipit debitis, corrupti alias, cum neque voluptatum vel facere autem tenetur perspiciatis. Mollitia corporis unde qui.</p>
+</details>
+
+<button id="open">Open Dialog</button>
+<button id="close">Close Dialog</button>
+
+<dialog>
+        <h2>Dialog Title</h2>
+        <p>Dialog content and other stuff will go here</p>
+      </dialog>
+
+      <script>
+            const dialog = document.getElementById("dialog");
+            
+            document.getElementById("open").addEventListener("click", () => {
+              dialog.show();
+            });
+            
+            document.getElementById("close").addEventListener("click", () => {
+              dialog.close();
+            });
+            </script>
+
+            <p>Texto del libro<cite>El Señor de los anillos</cite></p>
+            
+            <blockquote title="El Señor de los Anillos JRR Tolkien">
+                    Este libro trata principalmente de los Hobbits, y el lector descubrirá en
+                    sus páginas mucho del carácter y algo de la historia de este pueblo. Podrá
+                    encontrarse más información en los extractos del Libro Rojo de la Frontera del
+                    Oeste que ya han sido publicados con el título de El Hobbit. El relato tuvo su
+                    origen en los primeros capítulos del Libro Rojo, compuesto por Bilbo Bolsón -el
+                    primer Hobbit que fue famoso en el mundo entero - y que él tituló Historia de
+                    una ida y de una vuelta, pues contaba el viaje de Bilbo hacia el Este y la vuelta,
+                    aventura que más tarde enredaría a todos los Hobbits en los importantes
+                    acontecimientos que aquí se relatan.
+                     No obstante, muchos querrán saber desde un principio algo más de este
+                    pueblo notable y quizás algunos no tengan el libro anterior. Para esos lectores
+                    se han reunido aquí algunas notas sobre los puntos más importantes de la
+                    tradición hobbit, y se recuerda brevemente la primera aventura. 
+                    <cite>El Señor de los anillos</cite>                   
+            </blockquote>
+
+</body>
+</html>

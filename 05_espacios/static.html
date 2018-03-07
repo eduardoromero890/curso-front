@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Static</title>
+</head>
+
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    .container{
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+        border: .1rem solid;
+        /*overflow: hidden;*/
+    }
+    .container::after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+    p{
+        background-color: salmon;
+        /*margin-right:5%;*/
+        width: 20%;
+        padding: 1rem;
+        float: left;
+    }
+    p:not(:last-of-type){
+        margin-right:6.66%;
+    }
+</style>
+
+<body>
+    <div class="container">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio officia quia excepturi, corrupti fuga ea enim vero a accusamus cumque. Ipsam dolore quae odit fuga accusantium consequuntur eaque, culpa ullam?</p>
+    <p>Rerum impedit perferendis laboriosam necessitatibus earum? Nemo consectetur tenetur modi nulla labore quaerat veniam maxime praesentium ex repellat. Dolores, ipsa. Quas hic qui illum eos iure tenetur natus aperiam adipisci.</p>
+    <p>Dolores expedita corrupti deserunt omnis, incidunt deleniti praesentium vel tempora eius at perspiciatis fugiat inventore dolorem voluptates nihil blanditiis et sed illum laborum. Ducimus quia cum architecto laudantium saepe nihil.</p>
+    <p>Atque vitae obcaecati corporis eius vero unde, dignissimos excepturi accusantium est, exercitationem ipsa, eligendi quasi cupiditate voluptas? Unde nulla odio adipisci accusamus maxime sit qui temporibus doloremque. Cumque, facilis voluptates.</p>
+    
+    </div>
+</body>
+</html>

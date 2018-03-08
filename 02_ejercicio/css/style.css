@@ -2,6 +2,7 @@
 
 body{
     font-family: 'Roboto',sans-serif,serif;
+    background-color: darkseagreen;
 }
 
 .container{
@@ -16,6 +17,7 @@ body{
 
 header h1{
     font-family:Coiny, cursive;
+    background-color:rgb(143,188,143);
 
 }
 header p{
@@ -26,4 +28,20 @@ header p{
 h2{
     font-style: italic;
     font-weight: bold;
+}
+figure{
+    margin: 0;
+    float: left;
+    padding: 0;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+    width: 50%;
+}
+figure img{
+    width: 100%;
+    height: auto;
+    padding-bottom: .5rem;
+}
+figcaption{
+    text-align: center;
 }

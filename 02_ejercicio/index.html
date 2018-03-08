@@ -7,6 +7,21 @@
     <link rel="shortcut icon" href="favicon.png" type="image/x-png">
     <link rel="shortcut icon" href="favicon.png" type="image/x-png">
     <title>Granada</title>
+
+    <style>
+
+        table.t2 td,
+        table.t2 th{
+            border:.1rem solid;
+            padding: .7rem;
+        }
+        table.t2 tr:nth-of-type(odd){
+            background-color: springgreen;
+        }
+
+        }
+    </style>
+
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
@@ -33,6 +48,60 @@
         </ul>
 </nav>
         <hr>
+
+        <h1>Tablas en html</h1>
+    
+        <table class="t2">
+                <tr>
+                   
+                    <th colspan="2"></th>
+                    <th>Poblacion en Granada </th>
+                    
+                </tr>
+                <tr>
+                        <th rowspan="2" scope="rowgroup">Personas</th>
+                        <th scope="row">2016</th>
+                        <td>234.758</td>
+                        
+                    </tr>
+    
+                    <tr>
+                         
+                            <th scope="row">2015</th>
+                            <td>235.800</td>
+                            
+                        </tr>
+    
+                    <tr>
+                            <th rowspan="2"scope="rowgroup">Personas</th>
+                            <th scope="row">2014</th>
+                            <td>237.540</td>
+                            
+                        </tr>
+    
+                        <tr>
+                               
+                                <th scope="row">2013</th>
+                                <td>237.818</td>
+                                
+                            </tr>
+    
+                        <tr>
+                                <th rowspan="2"scope="rowgroup">Personas</th>
+                                <th scope="row">2012</th>
+                                <td>239.017</td>
+                                
+                            </tr>
+    
+                            <tr>
+                                    
+                                    <th scope="row">2011</th>
+                                    <td>240.099</td>
+                                    
+                                </tr>
+    
+            </table>
+
         <p><a href="https://es.wikipedia.org/wiki/Baza_(Granada)">Enlace a la ciudad de Granada: Baza</a></p>
 
         <p><a href="https://es.wikipedia.org/wiki/Granada">Enlace a la página de wikipedia Granada</a></p>
@@ -67,9 +136,16 @@
                 <!-- El elemento HTML <main>  representa el contenido principal del <body> de un documento o aplicación. El área principal del contenido consiste en el contenido que está directamente relacionado, o se expande sobre el tema central de un documento o la funcionalidad central de una aplicación. Este contenido debe ser único al documento, excluyendo cualquier contenido que se repita a través de un conjunto de documentos como barras laterales, enlaces de navegación, información de derechos de autor, logos del sitio y formularios de búsqueda (a menos, claro, que la función principal del documento sea un formulario de búsqueda). -->
 
               <main>
-                  
+                    <figure>
                 <img src="images/foto_de_la_alhambra.jpg" alt="foto de la alhambra">
-            
+                <figcaption>Foto de la alhambra</figcaption>
+                    </figure>
+
+                    <figure>
+                            <img src="images/EL-BAÑUELO.jpg" alt="el bañuelo">
+                            <figcaption>El bañuelo</figcaption>
+                                </figure>
+
                 <div>
                         <p><em>En 2017 la habitaban 232.770 personas (108.889 hombres y 125.869 mujeres),7​.498.365 contando el área metropolitana.</em></p>
                 </div>

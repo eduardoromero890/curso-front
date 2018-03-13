@@ -1,0 +1,42 @@
+aside{
+    float: right;
+    width: 15rem;
+    height: 9rem;
+    background-color: deeppink;
+    
+}
+header{
+    text-align: center;
+}
+.container{
+    width: 90%;
+    max-width: 1500px;
+    min-width: 470px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+}
+.left, .right{
+    width: 40%;
+    float: left;
+    margin: 1rem;
+}
+body{
+    background-color: aqua;
+    background-image: url("./images/arena.PNG")
+    
+}
+footer{
+    display: inline-block;
+    width: 100%;
+    margin-top: 2rem;
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: darkred;
+}
+figure{
+    display: inline-block;
+    margin: 2rem;
+    height: 300px;
+    width: 800px;
+}

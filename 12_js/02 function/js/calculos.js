@@ -18,6 +18,5 @@ sumar(123, 34);
 sumar(23, 45);
 
 sumar(2, 5);
-sumar()
 
 restar(10, 5)

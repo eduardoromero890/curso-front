@@ -1,3 +1,4 @@
+
 //objeto literal
 let user = {
     nombre: 'pepe',
@@ -8,6 +9,7 @@ let user = {
         c_postal: ''
     },
     edad: 23,
+    aficiones: ['deporte', 'papiroflexia'],
     iscasado: true
 }
 

@@ -29,7 +29,7 @@ function calcularPar(n) {
     } else if (parseInt(n) != parseFloat(n)) {
         r = -3
     } else {
-        r = n % 2
+        r = n%2
     }
     return r
 }
@@ -42,7 +42,7 @@ function mostrarEsPar(n) {
         `El número ${n} es decimal`];
     // r puede valer 0, 1, -1
     let r = calcularPar(n)
-    if (r > 0) { r = r }
+    if (r > 0) { r = -r }
 
     //r = (r === -1) ? 2 : r;
     // si r = -1 lo convierto en 2
@@ -68,16 +68,16 @@ function mostrarEsParCasos(n){
         mensaje =`El número ${n} es IMPAR`
         break
         case -2:
-        mensaje =`El dato ${n} es decimal`
+        mensaje =`El dato ${n} no es un numero`
         break
         case -3:
         mensaje =`El número ${n} es decimal`
-        break
+        
     }
     console.log(mensaje)
 }
 
 mostrarEsParCasos('edu')
-mostrarEsPar(14)
-mostrarEsPar(113)
-mostrarEsPar(14.5)
+mostrarEsParCasos(14)
+mostrarEsParCasos(113)
+mostrarEsParCasos(14.5)

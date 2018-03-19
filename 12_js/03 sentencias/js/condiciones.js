@@ -19,7 +19,7 @@ const userMaria = {
 const MAYOREDAD = 18
 
 function crearsaludo(user) {
-    let mensaje = 'Hola'
+    let mensaje = 'Hola '
 
     if (user.edad >= MAYOREDAD && user.genero == 'M') {
         mensaje += 'D.'

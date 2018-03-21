@@ -23,9 +23,11 @@ console.log(aLetras.length)
 
 //console.log(aLetras.join(''))
 //console.log(aLetras)
-//aLetrasOriginal = aLetras.slice(0, aLetras.length-1)
-//aLetras.sort()
-//console.log(aLetrasOriginal)
+aLetrasOriginal = aLetras.slice(0, aLetras.length)
+aLetras.sort()//Mutables
+console.log('Copia No Sort: ', aLetrasOriginal)
+aLetras.reverse()//Mutable
+console.log('Reverse', aLetrasOriginal)
 
 //Mutable
 //let aNuevo =

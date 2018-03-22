@@ -5,6 +5,12 @@ function Libro (autor, titulo, editorial, fecha, generos) {
     this.editorial= editorial,
     this.fecha= fecha,
     this.generos= generos
+    this.mostrarReferencia = function (){
+        let ref = this.autor + '. '
+        ref += '"' + this.titulo + '". '
+        ref += this.editorial + ', ' + this.fecha.getUTCFullYear() + '. '
+        return ref
+    }
 }
 
 let libro1 = new Libro(
@@ -17,11 +23,9 @@ let libro1 = new Libro(
     console.log(libro1)
 
     let libro2 = new Libro('William Gibson', 'Neuromante', 'Minotauro', new Date('1954'), ['SciFi'])
-    //siempre se puede modificar cualquier objeto
-    libro2.propietario='pepe'
     
+    
+    console.log(libro2.mostrarReferencia())
 
-    console.log(libro2)
 
-    console.log(typeof libro1)
-    console.log(libro2.constructor.name)
+        

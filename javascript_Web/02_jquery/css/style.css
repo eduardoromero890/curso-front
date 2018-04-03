@@ -1,0 +1,25 @@
+*, *::before, *::after, *:before, *:after { 
+    box-sizing : border-box;
+}
+body{
+    background-color: bisque;
+    margin: 2rem;
+}
+button{
+    color: blue;
+}
+main{
+    min-height: 60vh;
+}
+main botton{
+    color: maroon;
+}
+main div{
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    padding: 1rem;
+}
+main div.output{
+    border: 1px solid sienna;
+   width: 10rem; 
+}

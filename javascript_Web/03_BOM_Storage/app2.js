@@ -27,7 +27,8 @@
             let persona = localStorage.getItem('persona')
             persona = JSON.parse(persona)
             if (persona.nombre || persona.apellido) {
-                eSaludo.innerHTML = `Hola ${persona.nombre}${persona.apellido}`
+                /* eSaludo.innerHTML = `Hola ${persona.nombre} ${persona.apellido}` */
+                eSaludo.innerHTML = `Hola ${persona.nombre} ${persona.apellido}` 
             }
         }
         saludar()

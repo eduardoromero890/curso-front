@@ -19,35 +19,39 @@
     </main>
     <script>
 
-        class app {
+        class App {
+
             constructor() {
-                //Handler de eventos - DOM level 0
-                document.querySelector('#btnPulsar').onclick = this.btnPulsar
-                //Listener de eventos - DOM level 2
+
+                this.aMensajes = ['Hola soy un handler', 'Hola soy el más moderno, un listener']
+
+                // Handler de eventos - DOM Level 0
+                document.querySelector('#btnPulsar').onclick = this.btnPulsar.bind(this)
+
+                // Listener de eventos - DOM Level 2
                 document.querySelector('#btnPulsarM').addEventListener(
-                    'click', this.btnPulsarM)
+                    'click', this.btnPulsarM.bind(this))
+
+                document.querySelector('#aPulsarM').addEventListener(
+                    'click', this.btnPulsarM, false)
             }
+
             btnPulsar(ev) {
+                alert(this.aMensajes[0])
+                console.dir(ev)
             }
 
+            btnPulsarM(ev) {
+                ev.preventDefault()
+                alert(this.aMensajes[1])
+                console.dir(this)
+                console.dir(ev.target)
+            }
+        }
 
-            
-
-      
-      
-      
-      
-      
-      
-      
-      
-   
-        
-      
-      
- 
- </script>
-
+        window.addEventListener('load', ()=>app = new App())
+         
+    </script>
 </body>
 
 </html>

@@ -21,7 +21,8 @@
         //Listener de eventos - DOM level 2
         document.querySelector('#btnPulsarM').addEventListener(
             'click', btnPulsarM)
-
+            document.querySelector('#aPulsarM').addEventListener(
+        'click', btnPulsarM)
        function btnPulsar(ev){
             let s = 'Hola soy un handler'
             alert(s)
@@ -34,7 +35,7 @@
             console.dir(this)
             console.dir(ev.target)
         }
-        btnPulsaM()
+        
     </script>
 </body>
 </html>

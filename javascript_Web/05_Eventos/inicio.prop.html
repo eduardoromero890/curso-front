@@ -13,41 +13,44 @@
         <h1>Eventos</h1>
     </header>
     <main>
-        <button type="button" id="btnPulsar">Pulsar</button>
-        <button type="button" id="btnPulsarM">Pulsar Moderno</button>
-        <a href="https://www.google.com" id="aPulsarM">Pulsar Moderno</a>
+        <div class="form_group" id="btnGroup">
+            <button type="button" id="btnAceptar">Aceptar</button>
+            <button type="button" id="btnCancelar">Cancelar</button>
+        </div>
+        
     </main>
     <script>
 
         class app {
             constructor() {
-                //Handler de eventos - DOM level 0
-                document.querySelector('#btnPulsar').onclick = this.btnPulsar
-                //Listener de eventos - DOM level 2
-                document.querySelector('#btnPulsarM').addEventListener(
-                    'click', this.btnPulsarM)
-            }
-            btnPulsar(ev) {
+                this.aMensajes = ['Aceptado','Cancelado','Pulsado Grupo']
+                document.querySelector('#btnAceptar').addEventListener(
+                    'click', this.btnAceptar.bind(this), true)
+
+                document.querySelector('#btnCancelar').addEventListener(
+                    'click', this.btnCancelar.bind(this), true)
+
+                document.querySelector('#btnGroup').addEventListener(
+                    'click', this.btnGroup.bind(this), true)
             }
 
+            btnAceptar(ev) {
+                console.dir(this.aMensajes[0])
+            }
 
+            btnCancelar(ev) {
+                console.dir(this.aMensajes[1])
+            }
+
+            btnGroup(ev) {
+                console.dir(this.aMensajes[2])
+            }
             
+        }
 
-      
-      
-      
-      
-      
-      
-      
-      
-   
-        
-      
-      
- 
- </script>
-
+        window.addEventListener('load', ()=>app = new App())
+         
+    </script>
 </body>
 
 </html>

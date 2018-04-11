@@ -1,3 +1,5 @@
+import { CURSOS } from './cursos.js'
+
 export class Formulario {
         constructor() {
             this.datos = {
@@ -10,12 +12,14 @@ export class Formulario {
                 isOk2: false,
                 turno: '',
                 curso: {}
+                asignaturas:[]
             }
             this.accederDom()   
             this.definirManejadores()
         }
     
         accederDom() {
+            this.domFormulario = document.querySelector('#')
             this.domBtnSaludar = document.querySelector('#btnSaludar')
             this.domBtnEnviar = document.querySelector('#btnEnviar')
             this.domBtnBorrar = document.querySelector('#btnBorrar')
@@ -29,6 +33,7 @@ export class Formulario {
             this.domCbxIsOk = document.querySelector('#isOk')
             this.domCbxIsOk2 = document.querySelector('#isOk2')
             this.domSelectCurso = document.querySelector('#curso')
+
             this.domDivResultados = document.querySelector('#resultados')
             this.domFieldAcedemic = document.querySelector('#acedemic')
         }
@@ -38,6 +43,7 @@ export class Formulario {
             this.domBtnEnviar.addEventListener('click', this.enviar.bind(this))
             this.domBtnBorrar.addEventListener('click', this.borrar.bind(this))
             this.domCbxIsOk.addEventListener('change', this.completar.bind(this))
+            this.domSelectCurso.addEventListener('change', this.presentarAsignaturas.bind(this))
         }
     
         saludar() {
@@ -48,6 +54,7 @@ export class Formulario {
             ev.preventDefault()
             this.recogerDatos()
             this.presentarDatos()
+            this.domFormulario.submit()
         }
     
         borrar () {
@@ -92,6 +99,12 @@ export class Formulario {
             }    
         }
     
+        presentarAsignaturas(ev){
+            let topics = CURSOS[ev.target.selectedIndex-1].asignaturas
+            let HTMLResult = ''
+            topics.forEach(elem => HTMLResult += `<option>${elem}</option>`)
+        }
+        
         presentarDatos() {
             let resultadoHTML = 
             `<h2>Resultados</h2>

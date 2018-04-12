@@ -1,0 +1,11 @@
+{
+    "posts": [
+      { "id": 1, "title": "js_anonimo1", "author": "Eduardo" },
+      { "id": 2, "title": "js_anonimo2", "author": "Eduardo","contenido":"patatinpatatan" }
+    ],
+    "comments": [
+      { "id": 1, "body": "comentario1", "postId": 1 },
+      { "id": 2, "body": "comentario2", "postId": 2 }
+    ],
+    "profile": { "name": "typicode" }
+  }

@@ -48,7 +48,6 @@ function app() {
 
     function postDatos () {
         let data = {
-            id: undefined,
             title: "El Señor de los Anillos",
             author: "JRR Tolkien"}
         let metodo = 'POST'
@@ -70,7 +69,18 @@ function app() {
         }
         conectar(metodo, url, JSON.stringify(data), stateChange)      
     }
+    function responder(){
+        let responder = JSON.parse('ajax',)
+    }
+    function conectar(metodo, url, data, funcion) {
+        ajax = new XMLHttpRequest()
+        ajax.onreadystatechange = funcion
+        ajax.open(metodo, url)
+        ajax.setRequestHeader('Content-Type', 'application/json')
+        ajax.setRequestHeader('Accept',  'application/json')
+        ajax.send(data)
 
+    }
     function stateChange () {
         console.log("Cambio de estado")
         console.log(ajax.readyState)
@@ -84,17 +94,6 @@ function app() {
                 console.log(ajax.statusText)
             }
         }
-    }
-
-    function conectar(metodo, url, data, funcion) {
-        ajax = new XMLHttpRequest()
-        ajax.onreadystatechange = funcion
-        ajax.open(metodo, url)
-        ajax.setRequestHeader('Content-Type', 'application/json')
-        ajax.setRequestHeader('Accept',  'application/json')
-        console.log(data)
-        ajax.send(data)
-
     }
 }
 window.addEventListener('load', app, false)

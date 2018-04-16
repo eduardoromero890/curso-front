@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FormularioE</title>
+    <link rel="stylesheet" href="./form_1.css">
+    <script src="./form_app1.js" type="module"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Datos del alumno</h1>
+    </header>
+    <main>
+        <form action="" method="GET" id='form1'>
+            <fieldset>
+                <legend>Datos personales</legend>
+                <div class="control-group">
+                    <label for="nombre">nombre</label>
+                    <input type="text" name="nombre" id="nombre" maxlength="20" minlength="2" autofocus>
+                </div>
+                <div class="control-group">
+                    <label for="apellido">apellido1</label>
+                    <input type="text" name="apellido" id="apellido" placeholder="Escribe tus apellidos">
+                </div>
+                <div class="control-group">
+                    <label for="apellido">apellido2</label>
+                    <input type="text" name="apellido" id="apellido2" placeholder="Escribe tus apellidos">
+                </div>
+
+
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Fecha de Nacimiento</legend>
+                <div id="div_fecha" class="control-group">
+                    <label for="fecha">Fecha de nacimiento</label>
+                    <input type="date" name="fecha" id="fecha">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Aficiones</legend>
+                <div class="check-group">
+                    <input type="checkbox" name="isOk" id="isOk">
+                    <label for="isOk">Música</label>
+                    <input type="checkbox" name="isOk" id="isOk">
+                    <label for="isOk">Cine</label>
+                    <input type="checkbox" name="isOk" id="isOk">
+                    <label for="isOk">Viajar</label>
+                    <input type="checkbox" name="isOk" id="isOk">
+                    <label for="isOk">Lectura</label>
+                    <input type="checkbox" name="isOk" id="isOk">
+                    <label for="isOk">Pintura</label>
+                    <input type="checkbox" name="isOk" id="isOk">
+                    <label for="isOk">Deporte</label>
+                    <input type="checkbox" name="isOk" id="isOk">
+                    <label for="isOk">Fotografía</label>
+                    <input type="checkbox" name="isOk" id="isOk">
+                    <label for="isOk">Baile</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Otros datos</legend>
+                <textarea name="datos" id="datos" cols="30" rows="10" placeholder="Escribe lo que quieras"></textarea>
+            </fieldset>
+            <fieldset>
+
+
+                <fieldset>
+                    <legend>Identificación</legend>
+                    <div class="control-group">
+                        <label for="email">Cuenta de correo</label>
+                        <input type="email" name="email" id="email" placeholder="Escribe tus correo">
+                    </div>
+                    <div class="control-group">
+                        <label for="passwd">Introduzca su clave de acceso</label>
+                        <input type="password" name="passwd" id="passwd" placeholder="Escribe tus contraseña">
+                    </div>
+                    <div class="control-group">
+                            <label for="passwd">Repita la clave de acceso</label>
+                            <input type="password" name="passwd" id="passwdR" placeholder="Escribe tus contraseña">
+                        </div>
+                </fieldset>
+
+
+                <fieldset>
+                    <legend>Curso</legend>
+                    <div class="radio-group">
+                            <input type="radio" name="turno" id="mañana" value="mañana" checked>
+                            <label for="mañana">Programador Web</label>
+                            <input type="radio" name="turno" id="tarde" value="tarde">
+                            <label for="tarde">Programador de Sistemas</label>
+                            <input type="radio" name="turno" id="noche" value="noche">
+                            <label for="noche">Programador de Objetos</label>
+                        </div>
+                        <div class="control-group">
+                                <label for="curso">Selecciona un curso</label>
+                                <select name="curso" id="curso">
+                                    <option value=""></option>
+                                    <option value="front">Campos</option>
+                                </select>
+                            </div>
+                            <div id="div_topics" class="control-group ocultar">
+                                <label for="curso">Selecciona tres asignuras</label>
+                                <select name="topics" id="topics" multiple></select>
+                            </div> 
+                </fieldset>
+
+
+
+                <legend>Conformidad</legend>
+                
+                <div class="check-group">
+                    <input type="checkbox" name="isOk2" id="isOk2">
+                    <label for="isOk2">También estoy deacuero con ....</label>
+                </div>
+            </fieldset>
+            <fieldset id="acedemic" class="ocultar">
+                <legend>Datos academicos</legend>
+                <legend>Que turno quieres</legend>
+                <div class="radio-group">
+                    <input type="radio" name="turno" id="mañana" value="mañana" checked>
+                    <label for="mañana">Mañana</label>
+                    <input type="radio" name="turno" id="tarde" value="tarde">
+                    <label for="tarde">Tarde</label>
+                    <input type="radio" name="turno" id="noche" value="noche">
+                    <label for="noche">Noche</label>
+                </div>
+                <div class="control-group">
+                    <label for="curso">Selecciona un curso</label>
+                    <select name="curso" id="curso">
+                        <option value=""></option>
+                        <option value="front">Desarrollo Front</option>
+                        <option value="web">Diseño Web</option>
+                        <option value="node">Servidores</option>
+                        <option value="sql">Bases de Datos</option>
+                    </select>
+                </div>
+                <div id="div_topics" class="control-group ocultar">
+                    <label for="curso">Selecciona tres asignuras</label>
+                    <select name="topics" id="topics" multiple></select>
+                </div>
+            </fieldset>
+
+            <fieldset>
+            
+            <div class="control-group">
+                
+                <button type="submit" id="btnEnviar">Enviar Datos</button>
+                <!-- <input type="submit" value="Enviar"> -->
+                <button type="reset" id="btnBorrar">Restablecer valores</button>
+                <!-- <input type="reset" value="Borrar"> -->
+                <input type="hidden" name="state" value="0">
+            </div>
+
+        </fieldset>
+
+        </form>
+        <div id="resultados" class="resultados">
+                <footer>
+                        <address>Eduardo Romero Gimaré</address>
+                </footer>
+        </div>
+    </main>
+</body>
+
+</html>
